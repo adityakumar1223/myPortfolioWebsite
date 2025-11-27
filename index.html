@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Kumar | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Aditya<span>Kumar</span></a>
+            <button class="menu-btn" onclick="toggleMenu()" aria-label="Toggle menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container hero-content fade-in">
+            <h1>Hi, I'm <br><span class="highlight">Aditya Kumar</span></h1>
+            <p>I create web experiences with modern technologies. Specializing in front-end development, I build interfaces that are both beautiful and functional.</p>
+            <a href="#projects" class="btn-cosmic">View My Work</a>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div style="margin-top: 5px;"><i data-lucide="arrow-down"></i></div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About <span>Me</span></h2>
+            
+            <div class="about-grid">
+                <div class="about-text fade-in">
+                    <h3>Passionate Engineering Student & Web Developer</h3>
+                    <p class="text-muted mb-4">
+                        With good grip over concepts in web development, I specialize in creating responsive, accessible, and performant web applications using modern technologies.
+                    </p>
+                    <p class="text-muted mb-6">
+                        I'm passionate about creating elegant solutions to complex problems, and I'm constantly learning new technologies and techniques.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#contact" class="btn-cosmic">Get In Touch</a>
+                    </div>
+                </div>
+
+                <div class="about-cards fade-in">
+                    <div class="feature-card">
+                        <div class="icon-box"><i data-lucide="code"></i></div>
+                        <div>
+                            <h4>Web Development</h4>
+                            <p class="text-sm text-muted">Creating responsive websites with modern frameworks.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-box"><i data-lucide="user"></i></div>
+                        <div>
+                            <h4>UI/UX Design</h4>
+                            <p class="text-sm text-muted">Designing intuitive interfaces and seamless experiences.</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-box"><i data-lucide="briefcase"></i></div>
+                        <div>
+                            <h4>Project Management</h4>
+                            <p class="text-sm text-muted">Leading projects from conception to completion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-subtle">
+        <div class="container">
+            <h2 class="section-title fade-in">My <span>Skills</span></h2>
+            
+            <div class="skills-grid fade-in">
+                <div class="skill-item">
+                    <div class="skill-header"><span>HTML/CSS</span><span>95%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="--w:95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span>JavaScript</span><span>90%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="--w:90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span>React</span><span>90%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="--w:90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span>Tailwind CSS</span><span>90%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="--w:90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span>Node.js</span><span>80%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="--w:80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header"><span>Git/GitHub</span><span>90%</span></div>
+                    <div class="progress-bar-bg"><div class="progress-bar-fill" style="--w:90%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured <span>Projects</span></h2>
+            <p class="section-subtitle fade-in">Here are some of my recent projects. Each project was carefully crafted with attention to detail.</p>
+
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">Supabase</span>
+                        </div>
+                        <h3>SaaS Landing Page</h3>
+                        <p class="text-muted text-sm my-4">A beautiful landing page app using React and Tailwind.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i data-lucide="external-link"></i></a>
+                            <a href="#" target="_blank"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <div class="tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Next.js</span>
+                        </div>
+                        <h3>Orbit Analytics Dashboard</h3>
+                        <p class="text-muted text-sm my-4">Interactive analytics dashboard with data visualization.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i data-lucide="external-link"></i></a>
+                            <a href="#" target="_blank"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                         <img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=2670&auto=format&fit=crop" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                        <h3>E-commerce Platform</h3>
+                        <p class="text-muted text-sm my-4">Full-featured e-commerce platform with payments.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i data-lucide="external-link"></i></a>
+                            <a href="#" target="_blank"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="center-btn mt-12">
+                <a href="https://github.com/machadop1407" class="btn-cosmic btn-outline">
+                    Check My GitHub <i data-lucide="arrow-right" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-subtle">
+        <div class="container">
+            <h2 class="section-title fade-in">Get In <span>Touch</span></h2>
+            
+            <div class="contact-grid">
+                <div class="fade-in">
+                    <h3 class="mb-8">Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <div class="icon-box"><i data-lucide="mail"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:adityakumarak1223@gmail.com" class="contact-link">adityakumarak1223@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="icon-box"><i data-lucide="phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+917463083663" class="contact-link">+91 7463 083663</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="icon-box"><i data-lucide="map-pin"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <span class="text-muted">Paralakhemundi, Gajapati, Odisha</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/aditya-kumar-1b1ab32b9/" target="_blank"><i data-lucide="linkedin"></i></a>
+                        <a href="https://x.com/KumarAdity21586" target="_blank"><i data-lucide="twitter"></i></a>
+                        <a href="https://www.instagram.com/whoadii/" target="_blank"><i data-lucide="instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="fade-in">
+                    <form onsubmit="handleForm(event)">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn-cosmic w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Adityakumar.co. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
